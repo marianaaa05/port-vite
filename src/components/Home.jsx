@@ -1,26 +1,34 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import foto from "../assets/proyectos/foto.png"
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#23b5d3]">
+    
+    <div name="home" className="w-full h-screen bg-[#02302D] text-white">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-stone-900 font-mono">Hola, mi nombre es:</p>
-        <h1 className="text-4xl sm:text-7xl font-bold">Diego Vistoso</h1>
+      <img 
+        src= {foto}
+        alt="Foto presentación portafolio"
+        className="w-[400px] h-[400px] ml-28 rounded-full"
+      />
+      
+      <div className="max-w-[1000px] ml-auto px-8 flex flex-col justify-center h-full">
+        <p className="text-stone-900 font-bold text-4xl text-[#DF90AD] sm:text-7xl">Hola!.., soy</p>
+        <h1 className="text-4xl sm:text-7xl font-bold text-[#D96A9E]">Mariana Arredondo</h1>
         <h2 className="text-4xl sm:text-7xl font-bold">
-          Desarrollador Full Stack.
+          Me encuentro en constante aprendízaje sobre desarrollo .
         </h2>
-        <p className="py-4 max-w[700px] font-serif text-gray-800">
-          Tengo habilidades en la creación y desarrollo de sitios web dinámicos
-          utilizando diversas tecnologías y herramientas de programación. En
-          constante aprendizaje y actualmente estoy adquiriendo conocimientos en
-          ReactJS y Tailwind CSS
+        <p>2020-2024</p>
+        <p className="py-4 max-w[700px] font-serif text-[#D37A0E]">
+          Actualmente, me encuentro terminando mi posgrado en Ingeniería Informática.
+          En el proceso he tenido la oportunidad de adquirir diferentes nociones sobre creación y desarrollo de sitios web dinámicos
+          utilizando diversas tecnologías y herramientas de programación. En las cuales se destacan: React, Next.js, JavaScript, Tailwind CSS, Astro, Vite, Node.js, Github, y Vercel.
         </p>
         <div>
           <Link to="works" smooth={true} duration={500}>
-            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-gray-900 hover:border-gray-900">
+            <button className="text-white group border-4 px-6 py-3 my-2 flex items-center hover:bg-[#059F9B] hover:border-[#D96A9E]">
               Ver Proyectos
               {/* icono arrow realice una rotación */}
               <span className="group-hover:rotate-90 duration-300">
@@ -29,8 +37,13 @@ const Home = () => {
             </button>
           </Link>
         </div>
+        
+        
       </div>
+      
+      
     </div>
+    
   );
 };
 
